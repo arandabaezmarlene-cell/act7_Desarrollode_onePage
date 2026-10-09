@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.contenido {
+    min-height: 100vh;
+    height: auto;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #3e3157;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 35px 40px 280px;
+}
+
+
+#zona1 {
+    background-image: url('../images/BTS_Inicio.jpg');
+}
+
+#zona2 {
+    background-image: url('../images/sobre_BTS.jpg');
+}
+
+#zona3 {
+    background-image: url('../images/albums.jpg');
+}
+
+#zona4 {
+    background-image: url('../images/Integrantes.png');
+}
+
+#zona5 {
+    background-image: url('../images/ARMY.jpg');
+}
+
+#zona6 {
+    background-image: url('../images/Exitos.png');
+}
+
+
+.texto {
+    max-width: 750px;
+    width: 100%;
+
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.88);
+    color: #302044;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.texto h1 {
+    text-align: center;
+    color: #6c3b91;
+
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+
+.texto p {
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.lista {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.lista li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+nav {
+    position: fixed;
+    left: 200px;
+    top: 30%;
+
+    z-index: 100;
+    transition: 0.4s ease;
+    transform: translateX(-50%);
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+
+nav ul a {
+    display: block;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    height: 40px;
+    width: 150px;
+
+    border: 2px solid #b99be8;
+    background-color: rgba(45, 28, 70, 0.9);
+
+    text-align: center;
+    padding: 10px 5px;
+
+    font-size: 14px;
+    transition: 0.4s ease;
+}
+
+
+nav ul a:hover {
+    background-color: #9b8bf5;
+    color: #ffffff;
+
+    transform: translateX(10%);
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        left: 10px;
+        top: 15px;
+        transform: none;
+    }
+
+    nav ul a {
+        width: 135px;
+        height: auto;
+
+        padding: 8px 4px;
+        font-size: 13px;
+    }
+
+    .contenido {
+        padding: 230px 15px 30px;
+        background-attachment: scroll;
+    }
+
+    .texto {
+        padding: 20px;
+    }
+
+    .texto h1 {
+        font-size: 25px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .lista li {
+        font-size: 14px;
+    }
+}
